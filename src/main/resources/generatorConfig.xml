@@ -15,7 +15,7 @@
         </commentGenerator>
         <!--数据库链接 参数 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/assistant" userId="root"
+                        connectionURL="jdbc:mysql://182.92.86.150:3306/assistant" userId="root"
                         password="123456">
         </jdbcConnection>
         <javaTypeResolver>
@@ -43,6 +43,7 @@
         </javaClientGenerator>
 
         <!-- 要生成哪些表 -->
-        <table tableName="user" domainObjectName="User"></table>
+<!--        <table tableName="user" domainObjectName="User"></table>-->
+        <table tableName="overtime" domainObjectName="Overtime"></table>
     </context>
 </generatorConfiguration>
