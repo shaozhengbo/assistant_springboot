@@ -40,7 +40,7 @@ public class OvertimeServiceImpl implements OvertimeService {
     public List<Overtime> findAllOvertimeByUid(long uid) {
         OvertimeExample example = new OvertimeExample();
         example.createCriteria().andUidEqualTo(uid);
-        example.setOrderByClause("year ASC, month ASC, day ASC");
+        example.setOrderByClause("status ASC, year ASC, month ASC, day ASC");
         return overtimeMapper.selectByExample(example);
     }
 

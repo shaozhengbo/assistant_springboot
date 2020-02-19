@@ -25,7 +25,7 @@ public class OvertimeController {
      * @throws ParseException
      */
     @GetMapping("/overtime/uid/{uid}")
-    public R findOvertimeList(@PathVariable("uid") long uid) throws ParseException {
+    public R findOvertimeList(@PathVariable("uid") Long uid) throws ParseException {
         Map<String, Object> resultMap = new HashMap<>();
         resultMap.put("data", overtimeService.findAllOvertimeByUid(uid));
         resultMap.put("msg", "ok");
