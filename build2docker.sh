@@ -1,5 +1,9 @@
 #!/bin/sh
 
+docker stop assistant_springboot
+
+docker rm assistant_springboot
+
 docker image rm assistant_springboot/assistant
 
 mvn package docker:build
